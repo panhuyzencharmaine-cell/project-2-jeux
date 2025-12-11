@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Memory Card Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Memory Card Game</h1>
+
+    <section class="hud">
+      <div class="hud-item">
+        <span class="label">Level:</span>
+        <span id="levelDisplay">1/3</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">Moves:</span>
+        <span id="moveCounter">0</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">Matches:</span>
+        <span id="matchCounter">0</span>
+      </div>
+      <div class="hud-item">
+        <span class="label">Time:</span>
+        <span id="timer">0.0</span>s
+      </div>
+      <button id="restartBtn" type="button">Restart</button>
+    </section>
+
+    <section class="message" id="message"></section>
+
+    <section class="memory-grid" id="memoryGrid"></section>
+  </main>
+
+  <div id="endScreen" class="end-screen">
+    <div class="end-card">
+      <h2 class="end-title">You Win!</h2>
+      <p id="endStats" class="end-stats"></p>
+      <button id="playAgainBtn" type="button" class="end-button">Play again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
